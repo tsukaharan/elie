@@ -10,6 +10,27 @@
 
 module.exports = (robot) ->
 
+
+  robot.hear /(sushi|すし|スシ|寿司)/i, (msg) ->
+    msg.send "スシが食べたい。"
+
+  robot.hear /(お腹すいた|腹へった|腹減った|お腹すいた|ランチ|食事)/i, (msg) ->
+    msg.send "行きましょう！社長のオゴリで！！"
+
+  robot.hear /(kanna|かんな|カンナ|環奈|天使)/i, (msg) ->
+    msg.send "http://xn--o9j0bk5305b8cxd.jp/wp-content/uploads/2014/07/bandicam-2014-07-10-20-23-18-369.jpg"
+    msg.send "かんな天使すぎてやばい"
+
+  robot.hear /(あいさつ|挨拶|エリー|elie|えりー)/i, (msg) ->
+    msg.send "エリーです！みんなよろしくね！"
+
+
+
+  # robot.hear /(kanna|かんな|カンナ|環奈|天使)/i, (msg) ->
+  #  timestamp = (new Date()).toISOString().replace(/[^0-9]/g, "")
+  #  msg.send "https://dl.dropboxusercontent.com/u/000000/kanna.jpg?#{timestamp}”
+
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
